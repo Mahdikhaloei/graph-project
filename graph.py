@@ -3,9 +3,10 @@ Author: [ Mahdi Khaloei ]
 Date: [ 12/04/2023 ]
 
 for run this module please do following:
-    1. source .venv/bin/activate
-    2. pip3 install -r requiremetns.txt
-    3. python graph.py
+    1. python3 -m venv .venv
+    2. source .venv/bin/activate
+    3. pip3 install -r requiremetns.txt
+    4. python graph.py
     
 Parameters
 ----------
@@ -20,7 +21,7 @@ graph: object
 
 Methods
 -------
-get_connected_nodes():
+get_shared_nodes():
     Finding pairs of nodes that share a common vertex
     
 """
