@@ -8,6 +8,12 @@ for run this module please do following:
     3. pip3 install -r requiremetns.txt
     4. python graph.py
     
+libraries
+----------
+networkx
+matplotlib
+
+    
 Parameters
 ----------
 node: list
@@ -45,7 +51,18 @@ class Graph:
         return shared_nodes
 
 
-node = [(0,2),(0,3),(8,5),(5,6),(1,2),(5,1),(1,0),(0,4),(4,8),(4,3),(8,7),(7,3),(6,2),(7,6)]
+node = [
+        (1,2),(1,3),(1,4),
+        (2,7),(2,8),(2,1),
+        (3,5),(3,9),(3,1),
+        (4,1),(4,6),(4,10),
+        (5,6),(5,3),(5,8),
+        (6,4),(6,5), (6,7),
+        (7,6),(7,2),(7,9),
+        (8,2),(8,5),(8,10),
+        (9,7),(9,10),(9,3),
+        (10,4),(10,9),(10,8)
+        ]
 
 my_graph = Graph(node)
 
